@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<person version="1">
+    <item name="xiaoming" age = "15" sex="male"/>
+    <item name="xiaohong" age = "16" sex="female"/>
+    <item name="xiaozi" age = "17" sex="male"/>
+</person>
+
+
