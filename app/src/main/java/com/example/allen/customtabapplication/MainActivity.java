@@ -55,20 +55,20 @@ public class MainActivity extends LightCycleAppCompatActivity<MainActivity> {
         titleText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    Method[] methods = SecondActivity.class.getDeclaredMethods();
-                    for(int i=0; i<methods.length; i++) {
-                        if(methods[i].isAnnotationPresent(TagInfo.class)) {
-                            TagInfo methodAnnation = methods[i].getAnnotation(TagInfo.class);
-                            if(methodAnnation != null) {
-                                Log.e("TAG-------", methodAnnation.name()+"----------");
-                            }
-                        }
-
-                    }
+//                    Method[] methods = SecondActivity.class.getDeclaredMethods();
+//                    for(int i=0; i<methods.length; i++) {
+//                        if(methods[i].isAnnotationPresent(TagInfo.class)) {
+//                            TagInfo methodAnnation = methods[i].getAnnotation(TagInfo.class);
+//                            if(methodAnnation != null) {
+//                                Log.e("TAG-------", methodAnnation.name()+"----------");
+//                            }
+//                        }
+//
+//                    }
                     /*Method method = SecondActivity.class.getDeclaredMethod("newIntent", Context.class);
                     Intent intent = (Intent) method.invoke(null, MainActivity.this);
                     startActivity(intent);*/
-//                mainPresenter.showInfo(MainActivity.this);
+                mainPresenter.showInfo(MainActivity.this);
             }
         });
         try {
